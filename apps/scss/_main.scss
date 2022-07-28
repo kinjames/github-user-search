@@ -1,0 +1,102 @@
+.main {
+   background-color: $content-bg-color;
+   padding: 1.25rem;
+   border-radius: 1rem;
+
+   @include breakpoint-up(medium){
+      padding: 2.5rem;
+   }
+   .profile-header {
+       gap: 1.35rem;
+
+      .profile-img{
+         border: 2px solid red;
+         width: 80px;
+         height: 80px;
+         overflow: hidden;
+         height: auto;
+
+         @include breakpoint-up(medium){
+            height: 7.5rem;
+            width: 7.5rem;
+         }
+
+         img {
+            width: 100%;
+            border-radius: 50%;
+         }
+      }
+
+      .name-date {
+         .name {
+            margin-bottom: 0.5rem;
+            .main-name{
+               margin-top: 0;
+               margin-bottom: 0.3125rem;
+               font-size: 1rem;
+               font-weight: 700;
+
+               @include breakpoint-up(medium){
+                  font-size: 1.5rem;
+               }
+            }
+   
+            .handle {
+               margin: 0;
+               color: $user-handle;
+               font-size: 0.8rem;
+            }
+         }
+
+         .date {
+            margin: 0;
+            opacity: .75;
+         }
+      }
+   }
+
+   .bio {
+      opacity: .75;
+      margin: 1.5rem 0;
+
+      @include breakpoint-up(medium){
+         font-size: 1rem;
+      }
+   }
+
+   .followers-container {
+      padding: 1.25rem;
+      border-radius: 1rem;
+      gap: 1.5rem;
+      background-color: $main-bg-color;
+      text-align: center;
+      margin-bottom: 1.5rem;
+
+      @include breakpoint-up(medium){
+         gap: 7.75rem;
+         text-align: left;
+         padding: 1.25rem 3.25rem;
+      }
+
+      .repos-name {
+         opacity: .75;
+         font-size: 0.75rem;
+         margin: 0;
+
+         @include breakpoint-up(medium){
+            font-size: .9rem;
+         }
+      }
+
+      .repos-num {
+         font-size: 1.1rem;
+         margin-bottom: 0;
+         margin-top: 0.875rem;
+         font-weight: 700;
+
+         @include breakpoint-up(medium){
+            font-size: 2.1rem;
+         }
+      }
+   }
+}

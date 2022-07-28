@@ -1,0 +1,71 @@
+.header {
+    margin-bottom: 1.5rem;
+    .head {
+        margin-bottom: 1.25rem;
+
+        .theme {
+            margin: 0;
+        }
+    }
+
+    .search {
+        height: 4rem;
+        padding: 0.625rem;
+        background-color: $content-bg-color;
+        border-radius: 0.75rem;
+
+        .ico-text {
+
+            .fa-search {
+                display: inline-block;
+                font-size: 1.55rem;
+                padding-right: 0.75rem;
+                color: $user-handle;
+
+                @include breakpoint-down(small){
+                    font-size: 1.3rem;
+                }
+            }
+            .input-box{
+                width: 36rem;
+                padding: 0.75rem 0.5rem;
+                border: none;
+                outline: none;
+                background-color: $content-bg-color;
+                color: $main-text-color;
+                font-size: 1rem;
+
+                @include breakpoint-down(medium){
+                    width: 24rem;
+                }
+
+                @include breakpoint-down(small){
+                    width: 12rem;
+                }
+
+            }
+        }
+
+        .btn {
+            height: 3.125rem;
+            width: 6.25rem;
+            background-color: $cta-bg-color;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            color: $main-text-color;
+            border-radius: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $cta-hover;
+            }
+
+            @include breakpoint-down(small){
+                width: 5rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
