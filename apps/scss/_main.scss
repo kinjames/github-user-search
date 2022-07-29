@@ -2,8 +2,8 @@
    background-color: $content-bg-color;
    padding: 1.25rem;
    border-radius: 1rem;
-   margin-bottom: 2.5rem;
    position: relative;
+   padding: 0 0 5rem 0;
 
    @include breakpoint-up(large){
       display: flex;
@@ -88,7 +88,7 @@
    .followers-container {
       padding: 1.25rem;
       border-radius: 1rem;
-      gap: 1.5rem;
+      gap: 2.6rem;
       background-color: $main-bg-color;
       text-align: center;
       margin-bottom: 1.5rem;
