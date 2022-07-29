@@ -78,6 +78,12 @@ input,button {
     &-col {
         flex-direction: column;
     }
+
+    &-row-col {
+        @include breakpoint-down(small){
+            flex-direction: column;
+        }
+    }
 }
 
 .container {
@@ -95,10 +101,6 @@ input,button {
 }
 
 
-.hide {
-    display: none;
-}
-
 
 h1 {
     margin: 0;
@@ -112,5 +114,15 @@ h1 {
         font-size: 0.8rem;
     }
 }
+
+
+.hide {
+    display: none;
+}
+
+.active {
+    opacity: .75;
+}
+
 
 
