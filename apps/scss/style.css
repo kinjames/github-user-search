@@ -123,7 +123,6 @@ h1 {
   padding: 1.25rem;
   border-radius: 1rem;
   position: relative;
-  margin-bottom: 5rem;
 }
 @media (min-width: 64em) {
   .main {
@@ -277,8 +276,6 @@ h1 {
 
 .header {
   margin-bottom: 1.5rem;
-  border: 2px solid red;
-  padding: 5rem 0 0 0;
 }
 .header .head {
   margin-bottom: 1.25rem;
