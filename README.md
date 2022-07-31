@@ -1,6 +1,6 @@
-# Frontend Mentor - Manage landing page
+# GitHub Search App
 
-![Design preview for the Manage landing page coding challenge](./images/screenshot.jpg)
+![Github Search App](./images/screenshot.jpg)
 
 This is a challenge from frontend mentor. It simple Github user search app that is used to find users on github.The github API was used in this solution.
 
