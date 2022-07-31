@@ -20,10 +20,10 @@
                 LIGHT <span><i class="fas fa-sun"></i></span>
             </p>
         </div>
-        <form class="search flex flex-jc-sb flex-ai-c">
+        <form class="search flex flex-jc-sb flex-ai-c" autocomplete="off" id="myForm">
             <div class="ico-text flex flex-ai-c">
                 <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search Github username..." class="input-box">
+                <input type="text" placeholder="Search Github username..." class="input-box" id="search" required>
             </div>
             <button class="btn">Search</button>
         </form>
@@ -32,23 +32,23 @@
     <main class="container main flex flex-col">
         <div class="profile-header flex">
             <div class="profile-img">
-                <img src="images/avatar.png" alt="">
+                <img src="images/avatar.png" alt="" id="avatar">
             </div>
             <div class="name-date">
                 <div class="name">
-                    <p class="main-name">
+                    <p class="main-name" id="mainName">
                         The Octocat
                     </p>
-                    <p class="handle">
-                        @octocat
+                    <p class="handle" id="handle">
+                        @<span id="handle">octocat</span>
                     </p>
                 </div>
-                <p class="date">
+                <p class="date" id="dateJoined">
                     Joined 25 Jan 2011
                 </p>
             </div>
         </div>
-        <p class="bio">
+        <p class="bio" id="bio">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga repudiandae vero atque natus? 
         </p>
         <div class="followers-container flex">
@@ -56,7 +56,7 @@
                 <p class="repos-name">
                     Repos
                 </p>
-                <p class="repos-num">
+                <p class="repos-num" id="publicRepos">
                     8
                 </p>
             </div>
@@ -64,7 +64,7 @@
                 <p class="repos-name">
                     Followers
                 </p>
-                <p class="repos-num">
+                <p class="repos-num" id="followers">
                     3938
                 </p>
             </div>
@@ -72,7 +72,7 @@
                 <p class="repos-name">
                     Following
                 </p>
-                <p class="repos-num">
+                <p class="repos-num" id="following">
                     9
                 </p>
             </div>
@@ -83,7 +83,7 @@
                     <p class="icons-img">
                         <i class="fas fa-map-marker-alt"></i>
                     </p>
-                    <p class="icons-text">
+                    <p class="icons-text" id="location">
                         San Francisco
                     </p>
                 </div>
@@ -91,7 +91,7 @@
                     <p class="icons-img">
                         <i class="fas fa-link"></i>
                     </p>
-                    <p class="icons-text">
+                    <p class="icons-text" id="urlText">
                         https://github.com/
                     </p>
                 </div>
@@ -101,7 +101,7 @@
                     <p class="icons-img">
                         <i class="fab fa-twitter"></i>
                     </p>
-                    <p class="icons-text">
+                    <p class="icons-text" id="twitter">
                         Not available
                     </p>
                 </div>
@@ -109,7 +109,7 @@
                     <p class="icons-img">
                         <i class="fas fa-building"></i>
                     </p>
-                    <p class="icons-text">
+                    <p class="icons-text" id="company">
                         @github
                     </p>
                 </div>
