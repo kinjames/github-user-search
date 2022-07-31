@@ -12,7 +12,7 @@
     .search {
         height: 4rem;
         padding: 0.625rem;
-        background-color: $content-bg-color;
+        background-color: var(--content-bg-color);
         border-radius: 0.75rem;
 
         .ico-text {
@@ -32,8 +32,8 @@
                 padding: 0.75rem 0.5rem;
                 border: none;
                 outline: none;
-                background-color: $content-bg-color;
-                color: $main-text-color;
+                background-color: var(--content-bg-color);
+                color: var(--main-text-color);
                 font-size: 1rem;
 
                 @include breakpoint-down(medium){
@@ -54,7 +54,7 @@
             border: none;
             outline: none;
             font-size: 1rem;
-            color: $main-text-color;
+            color: #fff;
             border-radius: 0.75rem;
             font-weight: 700;
             cursor: pointer;

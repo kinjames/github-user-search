@@ -7,7 +7,7 @@
 
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=github.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./apps/scss/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Github User Search App</title>
 </head>
 <body>
@@ -16,11 +16,12 @@
             <h1>
                 devfinder
             </h1>
-            <p class="theme">
-                LIGHT <span><i class="fas fa-sun"></i></span>
+            <p class="theme" id="theme">
+                <span id="dark" class="active">LIGHT <i class="fas fa-sun"></i></span>
+                <span id="light" class="hide">DARK <i class="fas fa-moon"></i></span>
             </p>
         </div>
-        <form class="search flex flex-jc-sb flex-ai-c" autocomplete="off" id="myForm">
+        <form class="search flex flex-jc-sb flex-ai-c container-shadow" autocomplete="off" id="myForm">
             <div class="ico-text flex flex-ai-c">
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search Github username..." class="input-box" id="search" required>
@@ -29,7 +30,7 @@
         </form>
     </header>
 
-    <main class="container main flex flex-col">
+    <main class="container main flex flex-col container-shadow">
         <div class="profile-header flex">
             <div class="profile-img">
                 <img src="images/avatar.png" alt="" id="avatar">
@@ -49,7 +50,7 @@
             </div>
         </div>
         <p class="bio" id="bio">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga repudiandae vero atque natus? 
+           This profile has no bio. 
         </p>
         <div class="followers-container flex">
             <div class="repos">

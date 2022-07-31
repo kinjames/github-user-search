@@ -1,13 +1,21 @@
-let theme = document.getElementById('theme')
+let theme = document.getElementById('theme');
+let light = document.getElementById('light');
+let dark = document.getElementById('dark');
 
 
 theme.addEventListener('click', function(){
         document.body.classList.toggle('light-theme')
-        // if (document.body.classList.contains('light-theme')){
-        //     theme.textContent = "Light Mode";
-        // } else {
-        //     theme.textContent = "Dark Mode";
-        // };
+        if (document.body.classList.contains('light-theme')){
+            light.classList.remove('hide');
+            light.classList.add('active');
+            dark.classList.remove('active');
+            dark.classList.add('hide')
+        } else {
+            dark.classList.add('active');
+            dark.classList.remove('hide');
+            light.classList.add('hide')
+            light.classList.remove('active')
+        }        
 });
 
 console.log('hello world');
@@ -49,6 +57,10 @@ form.addEventListener('submit', function(e){
         urlText.textContent = data.blog;
         twitter.textContent = data.twitter_username;
         company.textContent = data.company;
+
+        if (data.blog === ""){
+            console.log('nothing to show')
+        }
 
 
     })

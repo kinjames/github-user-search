@@ -16,8 +16,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Space Mono', monospace;
-    background-color: $main-bg-color;
-    color: $main-text-color;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     height: 100vh;
     font-size: $small-font;
     display: flex;
@@ -47,18 +47,29 @@ input,button {
     font-family: inherit;
 }
 
-.light-theme {
-    $content-bg-color: #fefefe;
-    $main-bg-color: #f6f8ff;
-    $cta-bg-color: #0079FF;
-    $cta-hover: #60abff;
-    $follower-bg-color: #141D27;
-    $user-handle: #0079FF;
-    $main-text-color: #4b6a9b;
-    $username-color: #2b3442;
-    $followers-color: #fff;
-    $followers-num-color: #2b3442;
+
+:root {
+    --content-bg-color: #{$content-bg-color};
+    --main-bg-color: #{$main-bg-color};
+    --follower-bg-color: #{$follower-bg-color};
+    --main-text-color: #{$main-text-color};
+    --username-color: #{$username-color};
+    --followers-color: #{$followers-color};
+    --followers-num-color: #{$followers-num-color};
+    --lm-shadow-inactive: #{$lm-shadow-inactive};
 }
+
+.light-theme {
+    --content-bg-color: #fefefe;
+    --main-bg-color: #f6f8ff;
+    --follower-bg-color: #f6f8ff;
+    --main-text-color: #4b6a9b;
+    --username-color: #2b3442;
+    --followers-color: #4b6a9b;
+    --followers-num-color: #2b3442;
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
 
 .flex {
     display: flex;
@@ -89,7 +100,7 @@ input,button {
 .container {
     width: 46.875rem;
     // border: 2px solid red;
-    box-shadow: $lm-shadow-inactive;
+
 
     @include breakpoint-down(medium){
         width: 100%;
@@ -100,6 +111,10 @@ input,button {
     }
 }
 
+.container-shadow {
+    box-shadow: var(--lm-shadow-inactive);
+}
+
 
 
 h1 {
@@ -107,7 +122,7 @@ h1 {
 }
 
 ::placeholder {
-    color: $main-text-color;
+    color: var(--main-text-color);
     opacity: 0.75;
 
     @include breakpoint-down(small){

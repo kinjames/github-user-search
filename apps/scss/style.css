@@ -12,8 +12,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Space Mono", monospace;
-  background-color: #141D27;
-  color: #fff;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   height: 100vh;
   font-size: 0.875rem;
   display: flex;
@@ -44,6 +44,28 @@ input, button {
   font-family: inherit;
 }
 
+:root {
+  --content-bg-color: #1E2A47;
+  --main-bg-color: #141D27;
+  --follower-bg-color: #141D27;
+  --main-text-color: #fff;
+  --username-color: #fff;
+  --followers-color: #fff;
+  --followers-num-color: #fff;
+  --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.light-theme {
+  --content-bg-color: #fefefe;
+  --main-bg-color: #f6f8ff;
+  --follower-bg-color: #f6f8ff;
+  --main-text-color: #4b6a9b;
+  --username-color: #2b3442;
+  --followers-color: #4b6a9b;
+  --followers-num-color: #2b3442;
+  --lm-shadow-inactive: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
 .flex {
   display: flex;
 }
@@ -67,7 +89,6 @@ input, button {
 
 .container {
   width: 46.875rem;
-  box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 63.9375em) {
   .container {
@@ -80,22 +101,26 @@ input, button {
   }
 }
 
+.container-shadow {
+  box-shadow: var(--lm-shadow-inactive);
+}
+
 h1 {
   margin: 0;
 }
 
 ::-moz-placeholder {
-  color: #fff;
+  color: var(--main-text-color);
   opacity: 0.75;
 }
 
 :-ms-input-placeholder {
-  color: #fff;
+  color: var(--main-text-color);
   opacity: 0.75;
 }
 
 ::placeholder {
-  color: #fff;
+  color: var(--main-text-color);
   opacity: 0.75;
 }
 @media (max-width: 39.9375em) {
@@ -119,7 +144,7 @@ h1 {
 }
 
 .main {
-  background-color: #1E2A47;
+  background-color: var(--content-bg-color);
   padding: 1.25rem;
   border-radius: 1rem;
   position: relative;
@@ -134,6 +159,7 @@ h1 {
 }
 .main .profile-header .profile-img {
   width: 80px;
+  border: 2px solid red;
   height: 80px;
   overflow: hidden;
   height: auto;
@@ -147,6 +173,16 @@ h1 {
 .main .profile-header .profile-img img {
   width: 100%;
   border-radius: 50%;
+}
+.main .profile-header .name-date {
+  border: 2px solid green;
+  width: 80%;
+}
+@media (min-width: 64em) {
+  .main .profile-header .name-date {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .main .profile-header .name-date .name {
   margin-bottom: 0.5rem;
@@ -184,10 +220,10 @@ h1 {
   padding: 1.25rem;
   border-radius: 1rem;
   gap: 2.6rem;
-  background-color: #141D27;
+  background-color: var(--main-bg-color);
   text-align: center;
   margin-bottom: 1.5rem;
-  box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--lm-shadow-inactive);
 }
 @media (min-width: 40em) {
   .main .followers-container {
@@ -247,7 +283,7 @@ h1 {
 .header .search {
   height: 4rem;
   padding: 0.625rem;
-  background-color: #1E2A47;
+  background-color: var(--content-bg-color);
   border-radius: 0.75rem;
 }
 .header .search .ico-text .fa-search {
@@ -266,8 +302,8 @@ h1 {
   padding: 0.75rem 0.5rem;
   border: none;
   outline: none;
-  background-color: #1E2A47;
-  color: #fff;
+  background-color: var(--content-bg-color);
+  color: var(--main-text-color);
   font-size: 1rem;
 }
 @media (max-width: 63.9375em) {
