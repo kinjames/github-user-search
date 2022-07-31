@@ -124,14 +124,6 @@ h1 {
   border-radius: 1rem;
   position: relative;
 }
-@media (min-width: 64em) {
-  .main {
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    gap: 7.625rem;
-  }
-}
 @media (min-width: 40em) {
   .main {
     padding: 2.5rem;
@@ -155,13 +147,6 @@ h1 {
 .main .profile-header .profile-img img {
   width: 100%;
   border-radius: 50%;
-}
-@media (min-width: 64em) {
-  .main .profile-header .name-date {
-    display: flex;
-    justify-content: space-between;
-    gap: 11rem;
-  }
 }
 .main .profile-header .name-date .name {
   margin-bottom: 0.5rem;
@@ -190,14 +175,6 @@ h1 {
   opacity: 0.75;
   margin: 1.5rem 0;
 }
-@media (min-width: 64em) {
-  .main .bio {
-    position: absolute;
-    width: 60%;
-    left: 24%;
-    top: 19%;
-  }
-}
 @media (min-width: 40em) {
   .main .bio {
     font-size: 1rem;
@@ -211,15 +188,6 @@ h1 {
   text-align: center;
   margin-bottom: 1.5rem;
   box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 64em) {
-  .main .followers-container {
-    position: absolute;
-    width: 70%;
-    left: 24%;
-    top: 45%;
-    margin-bottom: 0;
-  }
 }
 @media (min-width: 40em) {
   .main .followers-container {
@@ -255,15 +223,7 @@ h1 {
   }
 }
 .main .icons-container {
-  gap: 3.75rem;
-}
-@media (min-width: 64em) {
-  .main .icons-container {
-    justify-content: center;
-    top: 72%;
-    left: 24%;
-    position: absolute;
-  }
+  gap: 6.75rem;
 }
 @media (max-width: 39.9375em) {
   .main .icons-container {

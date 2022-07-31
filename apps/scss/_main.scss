@@ -5,12 +5,12 @@
    position: relative;
 
 
-   @include breakpoint-up(large){
-      display: flex;
-      flex-direction: column;
-      height: 60vh;
-      gap: 7.625rem;
-   }
+   // @include breakpoint-up(large){
+   //    display: flex;
+   //    flex-direction: column;
+   //    height: 60vh;
+   //    gap: 7.625rem;
+   // }
 
    @include breakpoint-up(medium){
       padding: 2.5rem;
@@ -36,11 +36,11 @@
       }
 
       .name-date {
-         @include breakpoint-up(large){
-            display: flex;
-            justify-content: space-between;
-            gap: 11rem;
-         }
+         // @include breakpoint-up(large){
+         //    display: flex;
+         //    justify-content: space-between;
+         //    gap: 11rem;
+         // }
          .name {
             margin-bottom: 0.5rem;
             .main-name{
@@ -72,12 +72,12 @@
       opacity: .75;
       margin: 1.5rem 0;
 
-      @include breakpoint-up(large){
-         position: absolute;
-         width: 60%;
-         left: 24%;
-         top: 19%;
-      }
+      // @include breakpoint-up(large){
+      //    position: absolute;
+      //    width: 60%;
+      //    left: 24%;
+      //    top: 19%;
+      // }
 
       @include breakpoint-up(medium){
          font-size: 1rem;
@@ -93,13 +93,13 @@
       margin-bottom: 1.5rem;
       box-shadow: $lm-shadow-inactive;
 
-      @include breakpoint-up(large){
-         position: absolute;
-         width: 70%;
-         left: 24%;
-         top: 45%;
-         margin-bottom: 0;
-      }
+      // @include breakpoint-up(large){
+      //    position: absolute;
+      //    width: 70%;
+      //    left: 24%;
+      //    top: 45%;
+      //    margin-bottom: 0;
+      // }
 
       @include breakpoint-up(medium){
          gap: 6.75rem;
@@ -134,13 +134,13 @@
    }
 
    .icons-container {
-      gap: 3.75rem;
-      @include breakpoint-up(large){
-         justify-content: center;
-         top: 72%;
-         left: 24%;
-         position: absolute;
-      }
+      gap: 6.75rem;
+      // @include breakpoint-up(large){
+      //    justify-content: center;
+      //    top: 72%;
+      //    left: 24%;
+      //    position: absolute;
+      // }
 
 
       @include breakpoint-down(small){

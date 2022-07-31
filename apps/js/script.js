@@ -46,9 +46,12 @@ form.addEventListener('submit', function(e){
         followers.textContent = data.followers;
         following.textContent = data.following;
         locationText.textContent = data.location;
-        urlText.textContent = data.url;
+        urlText.textContent = data.blog;
         twitter.textContent = data.twitter_username;
         company.textContent = data.company;
+
+        console.log(data)
+
     })
 
 })
