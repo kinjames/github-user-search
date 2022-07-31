@@ -27,11 +27,12 @@ body {
 
     @include breakpoint-down(medium){
         padding: 5.25rem;
-        margin: 7rem 0;
+        margin: 4rem 0 3rem 0;
     }    
 
     @include breakpoint-down(small){
         padding: 1.25rem;
+        height: 100vh;
     }
 
 }
@@ -100,7 +101,6 @@ input,button {
 
 .container {
     width: 46.875rem;
-    // border: 2px solid red;
 
 
     @include breakpoint-down(medium){

@@ -57,12 +57,6 @@ form.addEventListener('submit', function(e){
         urlText.textContent = data.blog == "" ? "Not Available" :`${data.blog}`;
         twitter.textContent = data.twitter_username == null ? "Not Available" : `${data.twitter_username}`;
         company.innerHTML = data.company == null ? "Not Available" :`${data.company}`;
-
-        function WithoutTime(dateTime) {
-            var date = new Date(dateTime.getTime());
-            date.setHours(0, 0, 0, 0);
-            return date;
-        }
  
     })
 
