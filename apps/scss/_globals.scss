@@ -27,6 +27,7 @@ body {
 
     @include breakpoint-down(medium){
         padding: 5.25rem;
+        margin: 7rem 0;
     }    
 
     @include breakpoint-down(small){

@@ -24,7 +24,7 @@ body {
 @media (max-width: 63.9375em) {
   body {
     padding: 5.25rem;
-    margin: 10rem 0;
+    margin: 7rem 0;
   }
 }
 @media (max-width: 39.9375em) {
@@ -175,7 +175,6 @@ h1 {
   border-radius: 50%;
 }
 .main .profile-header .name-date {
-  border: 2px solid green;
   width: 80%;
 }
 @media (min-width: 64em) {

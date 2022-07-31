@@ -20,7 +20,6 @@
 
       .profile-img{
          width: 80px;
-         border: 2px solid red;
          height: 80px;
          overflow: hidden;
          height: auto;
@@ -37,7 +36,6 @@
       }
 
       .name-date {
-         border: 2px solid green;
          width: 80%;
          @include breakpoint-up(large){
             display: flex;

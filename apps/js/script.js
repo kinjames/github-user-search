@@ -45,24 +45,27 @@ form.addEventListener('submit', function(e){
     fetch("https://api.github.com/users/"+normalName)
     .then((result) => result.json())
     .then((data) => {
-        avatar.textContent = data.avatar_url;
+        avatar.src = `${data.avatar_url}`;
         mainName.textContent = data.name;
         handle.textContent = "@"+ data.login;
-        dateJoined.textContent = data.created_at;
-        bio.textContent = data.bio;
+        dateJoined.textContent = data.created_at.split("T").shift().split(".");
+        bio.textContent = data.bio == null ? "This profile has no bio" : `${data.bio}`;
         repos.textContent = data.public_repos;
         followers.textContent = data.followers;
         following.textContent = data.following;
-        locationText.textContent = data.location;
-        urlText.textContent = data.blog;
-        twitter.textContent = data.twitter_username;
-        company.textContent = data.company;
+        locationText.textContent = data.location == null ? "Not Available" :`${data.location}`;
+        urlText.textContent = data.blog == "" ? "Not Available" :`${data.blog}`;
+        twitter.textContent = data.twitter_username == null ? "Not Available" : `${data.twitter_username}`;
+        company.innerHTML = data.company == null ? "Not Available" :`${data.company}`;
 
-        if (data.blog === ""){
-            console.log('nothing to show')
+        function WithoutTime(dateTime) {
+            var date = new Date(dateTime.getTime());
+            date.setHours(0, 0, 0, 0);
+            return date;
         }
-
-
+ 
     })
 
 })
+
+//        param2.style.opacity = 0.5;
