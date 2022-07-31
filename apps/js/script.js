@@ -1,14 +1,14 @@
-// const theme = document.querySelector('.theme');
+let theme = document.getElementById('theme')
 
 
-// theme.addEventListener('click', function(){
-//         document.body.classList.toggle('light-theme')
-//         if (document.body.classList.contains('light-theme')){
-//             text.textContent = "Light Mode";
-//         } else {
-//             text.textContent = "Dark Mode";
-//         };
-// });
+theme.addEventListener('click', function(){
+        document.body.classList.toggle('light-theme')
+        // if (document.body.classList.contains('light-theme')){
+        //     theme.textContent = "Light Mode";
+        // } else {
+        //     theme.textContent = "Dark Mode";
+        // };
+});
 
 console.log('hello world');
 let avatar = document.getElementById('avatar');
@@ -50,7 +50,6 @@ form.addEventListener('submit', function(e){
         twitter.textContent = data.twitter_username;
         company.textContent = data.company;
 
-        console.log(data)
 
     })
 
