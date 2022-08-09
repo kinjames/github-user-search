@@ -34,12 +34,15 @@ let company = document.getElementById('company');
 
 const form = document.getElementById('myForm');
 
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
     var search = document.getElementById('search').value;
 
     var normalName = search.split(' ').join('');
+
+    document.search-form.reset();
 
 
     fetch("https://api.github.com/users/"+normalName)
@@ -61,5 +64,6 @@ form.addEventListener('submit', function(e){
     })
 
 })
+
 
 //        param2.style.opacity = 0.5;
